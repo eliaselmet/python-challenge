@@ -1,0 +1,5 @@
+Total Months = 86
+Total P/L = 38382578
+Average Monthly Change = 446309.0465116279
+Best Month over Month Increase = Feb-2012, 1926159
+Worst Month over Month Decrease = Sep-2013, -2196167

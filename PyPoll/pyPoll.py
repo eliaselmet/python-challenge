@@ -3,7 +3,7 @@ import os
 
 candidateDict = {}
 
-with open('election_data.csv') as csvfile:
+with open('PyPoll/election_data.csv') as csvfile:
 
     csvreader = csv.reader(csvfile, delimiter = ',')
     csvheader = next(csvreader)
@@ -25,7 +25,7 @@ for key,val in candidateDict.items():
 
 print(f'Winner: {winner}')
 
-txtfile = open('output1.txt','w')
+txtfile = open('PyPoll/output1.txt','w')
 for key,val in candidateDict.items():
         if val > mostVotes:
                 mostVotes = val

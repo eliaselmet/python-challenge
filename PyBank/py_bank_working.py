@@ -3,7 +3,9 @@ import os
 
 data_list = []
 
-with open('budget_data.csv') as csvfile:
+budget_data = os.path.join("PyBank", "budget_data.csv")
+
+with open(budget_data) as csvfile:
 
     csvreader = csv.reader(csvfile, delimiter = ',')
     monthOverMonth = 0
@@ -50,7 +52,7 @@ with open('budget_data.csv') as csvfile:
 
 averageChange = totalPL/totalMonths
 
-txtfile = open('output0.txt','w')
+txtfile = open('PyBank/output0.txt','w')
 txtfile.write(f'Total Months = {totalMonths}\n')
 txtfile.write(f'Total P/L = {totalPL}\n')
 txtfile.write(f'Average Monthly Change = {averageChange}\n')
